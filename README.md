@@ -1,9 +1,10 @@
-# Octant Dune Dashboards
+# Dune Dashboards by @gabe_onchain
 
-Two dashboards tracking Octant protocol onchain activity:
+Onchain data analysis dashboards:
 
 1. **State of Octant (v1):** https://dune.com/gabe_onchain/state-of-octant - GLM locking, community growth, whale activity
 2. **State of Octant v2:** https://dune.com/gabe_onchain/state-of-octant-v2 - StreamVote yield distribution via Superfluid streaming
+3. **Coinbase FY 2025 Revenue Model:** https://dune.com/gabe_onchain/coinbase-fy-2025-revenue-model - #CoinbaseChallenge entry modeling FY2025 total revenue using onchain data
 
 ---
 
@@ -73,6 +74,24 @@ Tracks Octant v2's StreamVote experiment: continuous yield distribution to 17 Et
 - Superfluid GDA event decoding (MemberUnitsUpdated)
 - Varbinary manipulation for address/uint extraction
 - 6 queries: allocation bar chart, 4 counters, time series
+
+---
+
+## Coinbase FY 2025 Revenue Model
+
+See [coinbase-challenge/](coinbase-challenge/) for full details.
+
+Entry for #CoinbaseChallenge: modeling Coinbase's FY 2025 total revenue using onchain data from Dune.
+
+**Estimate: $6.88B** (vs Wall Street consensus $7.28B)
+
+**Tweet:** https://x.com/gabe_onchain/status/2019878913208672452
+
+4 queries backing the model:
+- **Base L2 Monthly Net Revenue** - Sequencer fees minus L1 costs, shows Oct spike then Dec collapse (-62%)
+- **USDC Supply on Ethereum** - Weekly cumulative supply, grew from $44B to $65B+ through the crash
+- **Weekly DEX Trading Volume** - All-chain DEX volume showing Q4 volume cliff
+- **Quarterly Revenue Model** - Q1-Q3 actuals + Q4 estimate visualization
 
 ## Author
 

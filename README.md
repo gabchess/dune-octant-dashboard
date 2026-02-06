@@ -1,6 +1,13 @@
-# State of Octant - Dune Dashboard
+# Octant Dune Dashboards
 
-**Live Dashboard:** https://dune.com/gabe_onchain/state-of-octant
+Two dashboards tracking Octant protocol onchain activity:
+
+1. **State of Octant (v1):** https://dune.com/gabe_onchain/state-of-octant - GLM locking, community growth, whale activity
+2. **State of Octant v2:** https://dune.com/gabe_onchain/state-of-octant-v2 - StreamVote yield distribution via Superfluid streaming
+
+---
+
+## V1: State of Octant
 
 An onchain analysis of Octant protocol tracking GLM locking, community growth, and whale activity.
 
@@ -52,6 +59,20 @@ All SQL queries are in the `/queries` folder:
 - **Platform:** Dune Analytics
 - **Query Engine:** DuneSQL (Trino-based)
 - **Data Source:** `erc20_ethereum.evt_Transfer`
+
+---
+
+## V2: StreamVote Dashboard
+
+See [v2-streamvote/README.md](v2-streamvote/README.md) for full details.
+
+Tracks Octant v2's StreamVote experiment: continuous yield distribution to 17 Ethereum ecosystem projects via Superfluid GDA streaming, backed by yield-donating vaults.
+
+**Key highlights:**
+- Raw `ethereum.logs` queries (contracts not yet decoded on Dune)
+- Superfluid GDA event decoding (MemberUnitsUpdated)
+- Varbinary manipulation for address/uint extraction
+- 6 queries: allocation bar chart, 4 counters, time series
 
 ## Author
 
